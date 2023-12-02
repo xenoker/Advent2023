@@ -1,5 +1,4 @@
-
 __pycache__/
 *.py[cod]
-Profile.py
+[A-Z]*.py
 *.png

@@ -28,7 +28,7 @@ def part1():
 
 def part2():
     A.reverse()
-    valid = [(seeds[x],seeds[x]+seeds[x+1]-1) for x in range(0,len(seeds),2)]
+    valid = [(a,a+b-1) for a,b in zip(seeds[::2],seeds[1::2])]
     for x in range(50000000):
         r = A.get(x)
         if any(a<=r<=b for a,b in valid): return x

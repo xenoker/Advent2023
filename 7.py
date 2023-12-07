@@ -13,9 +13,8 @@ def score(p, p2=False):
 
 def score2(pi):
     p = pi[0]
-    S = []
     if 'J' not in p: return score(pi)
-    for c in '23456789TQKA': S.append(score((p.replace('J',c),),p))
+    S = [score((p.replace('J',c),),p) for c in '23456789TQKA' ]
     return sorted(S)[-1]
 
 def part(p2=False):

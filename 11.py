@@ -1,5 +1,5 @@
 from puzzleinput import getlines
-from itertools import product, combinations
+from itertools import combinations
 L = getlines(11)
 
 M = [(x,y) for y,l in enumerate(L) for x,c in enumerate(l) if c == '#']

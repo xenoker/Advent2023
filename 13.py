@@ -1,4 +1,4 @@
-from puzzleinput import getlines,get
+from puzzleinput import getlines
 from itertools import groupby
 
 L = [list(g) for k,g in groupby(getlines(13,True),bool) if k]

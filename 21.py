@@ -1,5 +1,5 @@
 from puzzleinput import getlines
-from numpy import array, polyfit, polyval
+from numpy import polyfit, polyval
 L = getlines(21)
 G = set((x,y) for y,l in enumerate(L) for x,z in enumerate(l) if z in '.S')
 S = [(x,y) for y,l in enumerate(L) for x,z in enumerate(l) if z=='S'][0]
